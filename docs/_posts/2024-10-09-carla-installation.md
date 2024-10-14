@@ -37,7 +37,7 @@ To clone CARLA's Unreal fork, I followed the process outlined at [https://www.un
 
 The Unreal Engine 4.26 build was successful, taking approximately 1.5 hours to complete. Here's a screenshot of the Unreal editor to confirm the installation:
 
-![Unreal Engine editor screenshot](images/unreal.png)
+{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unreal.png" alt="">{% endraw %}
 
 It's worth noting that compiling all the required shaders to create a new project from a template took considerable time. The process even stalled once, requiring a restart. On the second attempt, it ran smoothly and opened up within seconds.
 
@@ -142,7 +142,7 @@ Successfully installed carla-0.9.15
 ### Compile the server
 Server compilation (`make launch`) is very time-consuming due to the extensive shader compilation required. The process crashed multiple times, requiring repeated attempts. Eventually, I succeeded in compiling and launching the Unreal Engine editor. Below is a screenshot displaying the `Town10 HD` scenario:
 
-![Unreal screenshot while loading Town10 HD](images/unreal_carla.png)
+{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unreal_carla.png" alt="">{% endraw %}
 
 It's important to note that even after the editor launches, shaders and mesh distance fields continue compiling for some time.
 
@@ -213,4 +213,4 @@ Pillow
 
 Both the `generate_traffic.py` and `dynamic_weather.py` scripts ran flawlessly. However, I'll keep an eye on potential issues that might arise from the installed numpy version. Here's a screenshot of a running simulation:
 
-![Unreal screenshot with a running CARLA simulation](images/unreal_carla_sim.png)
+{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unreal_carla_sim.png" alt="">{% endraw %}

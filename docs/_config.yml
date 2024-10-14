@@ -63,7 +63,7 @@ author:
   bio    : "Computer Vision Engineer. PhD candidate @ URJC."
   links:
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-linkedin-square"
+      icon: "fas fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/dpascualhe/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -71,7 +71,7 @@ author:
 footer:
   links:
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-linkedin-square"
+      icon: "fas fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/dpascualhe/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
