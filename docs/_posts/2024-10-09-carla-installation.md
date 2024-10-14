@@ -5,16 +5,14 @@ categories:
 tags:
   - carla
   - tutorial
+toc: true
 ---
-
-# CARLA Installation
 
 This document serves as supplementary material for installing CARLA from source. While not a step-by-step guide, it details my personal experience during the installation process, highlighting common issues and their workarounds.
 
 📘 [Guide for building CARLA from source (required for development)](https://carla.readthedocs.io/en/latest/build_linux/)
 
 ## Prerequisites
-
 
 System requirements:
 
@@ -37,7 +35,7 @@ To clone CARLA's Unreal fork, I followed the process outlined at [https://www.un
 
 The Unreal Engine 4.26 build was successful, taking approximately 1.5 hours to complete. Here's a screenshot of the Unreal editor to confirm the installation:
 
-{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unreal.png" alt="">{% endraw %}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unreal.png" alt="">
 
 It's worth noting that compiling all the required shaders to create a new project from a template took considerable time. The process even stalled once, requiring a restart. On the second attempt, it ran smoothly and opened up within seconds.
 
@@ -99,7 +97,7 @@ Failed to build B2 build engine
 make: *** [Util/BuildTools/Linux.mk:142: setup] Error 1
 ```
 
-Apparently, this is a well-known issue (https://github.com/carla-simulator/carla/issues/6901). Installing the g++ 12 compiler and recompiling solved the problem.
+Apparently, this is a well-known issue (<https://github.com/carla-simulator/carla/issues/6901>). Installing the g++ 12 compiler and recompiling solved the problem.
 
 ```bash
 sudo apt install g++-12
@@ -142,14 +140,14 @@ Successfully installed carla-0.9.15
 ### Compile the server
 Server compilation (`make launch`) is very time-consuming due to the extensive shader compilation required. The process crashed multiple times, requiring repeated attempts. Eventually, I succeeded in compiling and launching the Unreal Engine editor. Below is a screenshot displaying the `Town10 HD` scenario:
 
-{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unreal_carla.png" alt="">{% endraw %}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unreal_carla.png" alt="">
 
 It's important to note that even after the editor launches, shaders and mesh distance fields continue compiling for some time.
 
 To verify that graphical acceleration was working correctly, I ran `nvidia-smi`. The `UE4Editor` process was consuming approximately 4-5GB of my GPU's VRAM.
 
 ### Start the simulation
-Once the editor launched and all shaders and mesh distance fields were ready, I attempted to run the simulation. However, when I pressed the `PLAY` button, the editor crashed. I discovered that my swap partition was too small for CARLA (https://github.com/carla-simulator/carla/issues/3398). After increasing my swap size to 8GB, everything ran smoothly (this likely would have prevented some earlier issues as well). This requirement was surprising, given that I have 32GB of RAM.
+Once the editor launched and all shaders and mesh distance fields were ready, I attempted to run the simulation. However, when I pressed the `PLAY` button, the editor crashed. I discovered that my swap partition was too small for CARLA (<https://github.com/carla-simulator/carla/issues/3398>). After increasing my swap size to 8GB, everything ran smoothly (this likely would have prevented some earlier issues as well). This requirement was surprising, given that I have 32GB of RAM.
 
 With the simulation running, I tested the Python client examples suggested in the documentation. While installing the Python requirements, I encountered an issue with the requested `numpy` version. The installation failed with this error message:
 
@@ -200,7 +198,7 @@ note: This is an issue with the package mentioned above, not pip.
 hint: See above for details.
 ```
 
-Apparently, recent changes related to `setuptools` are causing this issue (https://github.com/numpy/numpy/issues/27405). None of the suggested workarounds were successful for me, so I opted for a simple solution: I removed the exact version match from the `requirements.txt` file and ran `pip install` after activating my `carla` virtual environment. Here's my modified requirements file:
+Apparently, recent changes related to `setuptools` are causing this issue (<https://github.com/numpy/numpy/issues/27405>). None of the suggested workarounds were successful for me, so I opted for a simple solution: I removed the exact version match from the `requirements.txt` file and ran `pip install` after activating my `carla` virtual environment. Here's my modified requirements file:
 
 ```
 future
@@ -213,4 +211,4 @@ Pillow
 
 Both the `generate_traffic.py` and `dynamic_weather.py` scripts ran flawlessly. However, I'll keep an eye on potential issues that might arise from the installed numpy version. Here's a screenshot of a running simulation:
 
-{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unreal_carla_sim.png" alt="">{% endraw %}
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/unreal_carla_sim.png" alt="">

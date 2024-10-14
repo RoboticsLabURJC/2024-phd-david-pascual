@@ -60,10 +60,10 @@ plugins:
 author:
   name   : "David Pascual-Hernández"
   avatar : "/assets/images/profile.jpeg"
-  bio    : "Computer Vision Engineer. PhD candidate @ URJC."
+  bio    : "Computer Vision Engineer and PhD candidate at URJC."
   links:
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-linkedin"
+      icon: "fas fa-fw fa-link"
       url: "https://www.linkedin.com/in/dpascualhe/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -71,7 +71,7 @@ author:
 footer:
   links:
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-linkedin"
+      icon: "fas fa-fw fa-link"
       url: "https://www.linkedin.com/in/dpascualhe/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
