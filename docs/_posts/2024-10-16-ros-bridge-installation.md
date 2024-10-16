@@ -15,11 +15,11 @@ After studying the [OpenDRIVE standard](https://publications.pages.asam.net/stan
 
 1. Check the correspondence between the origin of coordinates in the `xodr`/CARLA and the Unreal coordinates. To do this, simply spawn a vehicle at $(x, y, z) = (0, 0, 0)$ and check its coordinates in the Unreal editor. In our case, when $(x_{CARLA}, y_{CARLA}, z_{CARLA}) = (0, 0, 0)$,  $(x_{Unreal}, y_{Unreal}, z_{Unreal}) = (100, -175, 0)$. Considering that Unreal coordinates appear to be in centimeters and CARLA's are in meters, we can convert between them as:
 
-    $x_{Unreal} = (x_{CARLA} - 100) / 100$
+    $$x_{Unreal} = (x_{CARLA} - 100) / 100$$
 
-    $y_{Unreal} = -(y_{CARLA} - 175) / 100$
+    $$y_{Unreal} = -(y_{CARLA} - 175) / 100$$
 
-    $z_{Unreal} = z_{CARLA} / 100$
+    $$z_{Unreal} = z_{CARLA} / 100$$
 
 2. Place as many empty actors as needed over the unstructured map landscape's surface and note their coordinates.
 3. Convert the Unreal coordinates and build a `xodr` file containing a road that links all of them using sequential straight segments. Use the script provided in `Simulation/utils/unreal_pts_to_xodr_road.py`. To use this script, store the Unreal coordinates in a JSON file following this format:

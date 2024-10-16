@@ -38,6 +38,6 @@ To create a custom map, I duplicated the BaseMap provided by CARLA. This empty m
 
 # Create map using OpenStreetMap
 
-Thanks to https://www.openstreetmap.org/, you can download a `.osm` file containing all road information and easily convert it to .xodr format (OpenDRIVE) using one of CARLA's provided scripts (`PythonAPI/util/osm_to_xodr.py`). After launching CARLA and starting a simulation, you can dynamically set the OpenStreetMap using the command `python [config.py](http://config.py) -x /path/to/map.xodr`. The resulting map is fully navigable—autopilot, spawn points, and other features work perfectly. You can see an example in the video below:
+Thanks to <https://www.openstreetmap.org/>, you can download a `.osm` file containing all road information and easily convert it to .xodr format (OpenDRIVE) using one of CARLA's provided scripts (`PythonAPI/util/osm_to_xodr.py`). After launching CARLA and starting a simulation, you can dynamically set the OpenStreetMap using the command `python config.py -x /path/to/map.xodr`. The resulting map is fully navigable—autopilot, spawn points, and other features work perfectly. You can see an example in the video below:
 
 {% include video id="1YQ-zhZhwvFNK2VGdVfYwQ5eoTZo1qbBk" provider="google-drive" %}
