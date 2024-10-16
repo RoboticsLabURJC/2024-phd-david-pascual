@@ -13,7 +13,7 @@ Now that the ROS bridge has been succesfully installed, it's time to test it in 
 
 After studying the [OpenDRIVE standard](https://publications.pages.asam.net/standards/ASAM_OpenDRIVE/ASAM_OpenDRIVE_Specification/latest/specification/index.html), we've generated a valid `xodr` file that defines a road with several segments within the unstructured map. The process is still somewhat manual:
 
-1. Check the correspondence between the origin of coordinates in the `xodr`/CARLA and the Unreal coordinates. To do this, simply spawn a vehicle at $(x, y, z) = (0, 0, 0)$ and check its coordinates in the Unreal editor. In our case, when $(x_{CARLA}, y_{CARLA}, z_{CARLA}) = (0, 0, 0)$,  $(x_{Unreal}, y_{Unreal}, z_{Unreal}) = (100, -175, 0)$. Considering that Unreal coordinates appear to be in centimeters and CARLA's are in meters, we can convert between them as:
+1. Check the correspondence between the origin of coordinates in the `xodr`/CARLA and the Unreal coordinates. To do this, simply spawn a vehicle at \((x, y, z) = (0, 0, 0)\) and check its coordinates in the Unreal editor. In our case, when \((x_{CARLA}, y_{CARLA}, z_{CARLA}) = (0, 0, 0)\),  \((x_{Unreal}, y_{Unreal}, z_{Unreal}) = (100, -175, 0)\). Considering that Unreal coordinates appear to be in centimeters and CARLA's are in meters, we can convert between them as:
 
     $$x_{Unreal} = (x_{CARLA} - 100) / 100$$
 
