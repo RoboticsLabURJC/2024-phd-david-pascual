@@ -1,9 +1,9 @@
 ---
-title: "CARLA Installation"
+title: "CARLA installation"
 categories:
   - Blog
 tags:
-  - carla
+  - CARLA
   - tutorial
 toc: true
 ---
