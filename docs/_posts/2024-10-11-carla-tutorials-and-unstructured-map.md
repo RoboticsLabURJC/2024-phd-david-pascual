@@ -4,7 +4,7 @@ categories:
   - Blog
 tags:
   - CARLA
-  - tutorial
+  - Tutorial
 toc: true
 ---
 Interesting tutorials:

@@ -5,7 +5,7 @@ categories:
 tags:
   - CARLA
   - ROS
-  - tutorial
+  - Tutorial
 toc: false
 ---
 The [official documentation](https://carla.readthedocs.io/projects/ros-bridge/en/latest/) only supports ROS 2 Foxy. However, forks of the `ros-bridge` repository are available that support the latest CARLA version (0.9.15) and ROS 2 Humble.

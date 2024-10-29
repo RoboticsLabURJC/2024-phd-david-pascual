@@ -6,7 +6,7 @@ tags:
   - CARLA
   - ROS
   - Semantic segmentation
-toc: true
+toc: false
 ---
 
 # ROS node for semantic segmentation
@@ -40,4 +40,4 @@ For further validation, we demonstrate the results of subscribing to the camera 
 
 {% include video id="1XtPFSFaw763v_UCGKwRvQq6y4psPXpCm" provider="google-drive" %}
 
-It's worth noting that this rosbag was originally built using ROS1. We used a Python tool called Rosbags (https://ternaris.gitlab.io/rosbags/index.html) to convert it to ROS2 format.
+It's worth noting that this rosbag was originally built using ROS1. We used a Python tool called Rosbags <https://ternaris.gitlab.io/rosbags/index.html> to convert it to ROS2 format.
