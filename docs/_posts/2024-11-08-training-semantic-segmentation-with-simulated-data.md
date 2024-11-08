@@ -9,20 +9,20 @@ tags:
 toc: true
 toc_sticky: true
 gallery:
-  - url: "/assets/images/dataset_example.png"
-    image_path: "/assets/images/dataset_example.png"
+  - url: "/assets/images/sim_dataset_test_0.png"
+    image_path: "/assets/images/sim_dataset_test_0.png"
     alt: "sim_dataset_test_0"
     title: "Test set sample"
-  - url: "/assets/images/dataset_example.png"
-    image_path: "/assets/images/dataset_example.png"
+  - url: "/assets/images/sim_dataset_test_1.png"
+    image_path: "/assets/images/sim_dataset_test_1.png"
     alt: "sim_dataset_test_1"
     title: "Test set sample"
-  - url: "/assets/images/dataset_example.png"
-    image_path: "/assets/images/dataset_example.png"
+  - url: "/assets/images/sim_dataset_test_2.png"
+    image_path: "/assets/images/sim_dataset_test_2.png"
     alt: "sim_dataset_test_2"
     title: "Test set sample"
-  - url: "/assets/images/dataset_example.png"
-    image_path: "/assets/images/dataset_example.png"
+  - url: "/assets/images/sim_dataset_test_3.png"
+    image_path: "/assets/images/sim_dataset_test_3.png"
     alt: "sim_dataset_test_3"
     title: "Test set sample"
 ---

@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "David Pascual-Hernández"
   avatar : "/assets/images/profile.jpeg"
-  bio    : ":man_student: PhD Student and Research Associate @ URJC \ :camera_flash: Computer Vision \ :robot: AI \ :blue_car:Autonomous Driving"
+  bio    : ":man_student: PhD Student and Research Associate @ URJC<br>:camera_flash: Computer Vision<br>:robot: AI<br>:blue_car:Autonomous Driving"
   links:
     - label: "LinkedIn"
       icon: "fas fa-fw fa-link"
