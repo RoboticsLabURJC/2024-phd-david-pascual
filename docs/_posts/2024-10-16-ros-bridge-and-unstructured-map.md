@@ -6,6 +6,7 @@ tags:
   - CARLA
   - ROS
 toc: true
+toc_sticky: true
 ---
 Now that the ROS bridge has been succesfully installed, it's time to test it in the unstructured map simulation. However, our custom map lacks a valid road definition, so the provided ROS packages don't work out of the box in our environment.
 

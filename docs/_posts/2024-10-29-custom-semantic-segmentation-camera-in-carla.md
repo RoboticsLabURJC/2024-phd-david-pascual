@@ -7,6 +7,7 @@ tags:
   - ROS
   - Semantic segmentation
 toc: true
+toc_sticky: true
 ---
 
 Following the detailed tutorial on [Create semantic tags - CARLA Simulator](https://carla.readthedocs.io/en/latest/tuto_D_create_semantic_tags/), we've successfully added new custom tags to CARLA's semantic segmentation camera. In this post, we outline the additional changes required beyond the tutorial's instructions.

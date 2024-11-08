@@ -6,6 +6,7 @@ tags:
   - CARLA
   - Tutorial
 toc: true
+toc_sticky: true
 ---
 
 This document serves as supplementary material for installing CARLA from source. While not a step-by-step guide, it details my personal experience during the installation process, highlighting common issues and their workarounds.
