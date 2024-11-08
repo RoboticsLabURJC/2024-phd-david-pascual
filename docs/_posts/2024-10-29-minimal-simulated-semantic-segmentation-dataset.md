@@ -7,6 +7,7 @@ tags:
   - ROS
   - Semantic segmentation
 toc: true
+toc_sticky: true
 ---
 
 In the [previous post](https://roboticslaburjc.github.io/2024-phd-david-pascual/blog/custom-semantic-segmentation-camera-in-carla/), we built a landscape as a static mesh and followed the CARLA tutorial to create a working version of custom semantic segmentation in our unstructured environment.
